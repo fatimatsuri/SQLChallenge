@@ -32,7 +32,8 @@ insert into store_revenue values (29, 2016-01-05,2, "United States-CA", 23);
 insert into store_revenue values (30, 2016-01-05, 2, "United States-TX", 4);
 insert into store_revenue values (31, 2016-01-05, 2, "United States-NY", 124);
 
-create table marketing_data ( id int not null primary key, date datetime, geo varchar(2), impressions float, clicks float );
+create table marketing_data ( id int not null primary key, date datetime,
+  geo varchar(2), impressions float, clicks float );
 insert into marketing_data values (1, 2016-01-01, "TX", 2532, 45);
 insert into marketing_data values (2, 2016-01-01, "CA", 3425, 63);
 insert into marketing_data values (3, 2016-01-01, "NY", 3532, 25);
