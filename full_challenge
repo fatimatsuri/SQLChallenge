@@ -107,14 +107,14 @@ from
     marketing_data
 group by
     geo;
-/** In my opinion, I think the most efficient
+select "In my opinion, I think the most efficient
 store would be California based on the number of
 clicks they received and the amount of revenue
 they made. $235,237 with 310 clicks is a lot compared
 to Texas' and New York's statistics. This is about $758.83
 per click on average for California, $214.81 per click for
 New York, and $40.97 per click for Texas. Thus, the store
-in California is the most efficient.**/
+in California is the most efficient."
 
 /* Question 5: (Challenge) Generate a query to
 rank in order the top 10 revenue producing states */
@@ -125,5 +125,5 @@ from
     rank() over (order by revenue desc) as ranking,
     dense_rank() over (order by revenue desc) as dense_rank
     from store_revenue)
-where
-    dense_rank < 11;
+limit
+    10;
