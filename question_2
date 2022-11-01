@@ -54,7 +54,7 @@ insert into marketing_data values (18, 2016-01-05, "CA", 4678, 73);
 insert into marketing_data values (19, 2016-01-05, "NY", 2364, 33);
 insert into marketing_data values (20, 2016-01-05, "MN", 3452, 25);
 
-  /* Question 2: Generate a query to gather
+/* Question 2: Generate a query to gather
   the sum of revenue by store_location from
   the store_revenue table. */
   select
